@@ -13,7 +13,7 @@ function _drawQuote() {
 export default class QuoteController {
 
   constructor() {
-    ProxyState.on("",)
+    ProxyState.on("quote", _drawQuote)
     this.getQuote()
   }
 

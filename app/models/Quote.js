@@ -1,5 +1,7 @@
 export default class Quote {
-  constructor() {
+  constructor(data) {
+    this.body = data.quote.body
+    this.author = data.quote.author
 
 
 
