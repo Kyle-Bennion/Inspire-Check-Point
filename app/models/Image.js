@@ -1,11 +1,9 @@
 export default class Image {
-  constructor() {
-
+  constructor(data) {
+    this.image = data.large_url
 
 
 
   }
-
-
 
 }
