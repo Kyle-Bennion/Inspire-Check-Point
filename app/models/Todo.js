@@ -1,5 +1,8 @@
 export default class Todo {
-  constructor({ id }) {
-    this.id = id;
+  constructor({ _id, }) {
+    this.id = _id;
+    this.completed = this.completed
+    this.user = user
+
   }
 }

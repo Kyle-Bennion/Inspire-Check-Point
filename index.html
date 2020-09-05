@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/style/main.css">
     <title>Inspire</title>
 </head>
@@ -13,7 +14,7 @@
 
     <main>
         <div id="app"></div>
-        <div class="row">
+        <div class="row col-12">
             <div class="col-10"></div>
             <div class="col-2" id="weather-info">
                 <!-- <div class="card text-right" style="width: 18rem;">
@@ -25,7 +26,7 @@
                 </div> -->
             </div>
         </div>
-        <div class="row">
+        <div class="row col-12">
             <div class="col-3">
                 <div class="card" id = "quote-bar">
                     <!-- <div class="card-header">
@@ -40,6 +41,27 @@
                     </div> -->
                 </div>
                 <div class="col-8">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row col-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded col-4">
+                <div class="card-header shadow p-3 mb-3 rounded">
+                    ToDo's Remaining : 
+                </div>
+                <div class="card-body">
+                <ul class="list-group" id="list-todo">
+                This is where task goes
+                </ul>
+                <form onsubmit = "app.listController.addTask(event,'${this.id}')">
+                    <label for="exampleFormControlInput1" class="mt-4">ToDo</label>
+                    <div class="form-group d-flex flex-direction-row">
+                        <input type="text" required class="form-control mb-0" id="New Task" placeholder="Example Text" name = "comment"><button type="submit" class="btn btn-transparent"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="form-group">
+                    </div>
+                </form>
                 </div>
             </div>
         </div>
