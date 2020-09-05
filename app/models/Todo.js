@@ -8,7 +8,7 @@ export default class Todo {
 
 get TodoTemplate(){
 return /*html */ `<div class="d-flex justify-content-between">
-<li class="my-1  "><input type="checkbox" class="py-2">${this.description}</li><i class="fa fa-minus spcpointer" onclick="app.todoController.removeTodo('${this.id}')"></i>
+<li class="my-1  "><input type="checkbox" class="py-2" onclick = "app.todoController.toggleTodoStatus('${this.id}')">${this.description}</li><i class="fa fa-minus spcpointer" onclick="app.todoController.removeTodo('${this.id}')"></i>
 </div>`
 
 }
