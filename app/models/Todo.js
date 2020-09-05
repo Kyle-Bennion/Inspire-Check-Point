@@ -7,7 +7,9 @@ export default class Todo {
   }
 
 get TodoTemplate(){
-return ` <li>`
+return /*html */ `<div class="d-flex justify-content-between">
+<li class="my-1 "><input type="checkbox" class="py-2">${this.description}</li><i class="fa fa-minus"></i>
+</div>`
 
 }
 
