@@ -2,6 +2,7 @@ import todoService from "../Services/TodoService.js";
 import { ProxyState } from "../AppState.js";
 
 //TODO Create the draw function
+//NOTE DONE
 function _drawTodos() { 
 let template = ""
 let todos = ProxyState.todos
@@ -35,6 +36,7 @@ export default class TodoController {
     } catch (error) {
       console.error(error)
     }
+    form.reset()
   }
 
   /**

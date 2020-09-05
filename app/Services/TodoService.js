@@ -36,9 +36,15 @@ class TodoService {
 
   async removeTodo(todoId) {
     //TODO Work through this one on your own
-    //		what is the request type
+    //		what is the request type - delete?
     //		once the response comes back, how do you update the state
+await api.delete(url+todoId)
+let index = ProxyState.todos.findIndex(t => t.id == todoId)
+ProxyState.todos.splice(index,1)
+ProxyState.todos = ProxyState.todos
+
   }
+  
 }
 
 const todoService = new TodoService();
