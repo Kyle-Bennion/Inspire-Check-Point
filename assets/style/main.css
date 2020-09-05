@@ -38,6 +38,31 @@
 
 .spcpointer{
   cursor: pointer;
+  user-select: none;
+}
+ 
+.sfoot {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.sfoot .sfoottext {
+  visibility: hidden;
+  width: 120px;
+  background-color: whitesmoke;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the sfoot */
+  position: absolute;
+  z-index: 1;
+}
+
+.sfoot:hover .sfoottext {
+  visibility: visible;
 }
 
 

@@ -9,12 +9,24 @@ let todos = ProxyState.todos
 todos.forEach(t => template += t.TodoTemplate)
 document.getElementById('list-todo').innerHTML = template
 }
+function _drawTaskLeft(){
+  let count = 0
+  for( let i = 0 ; i < ProxyState.todos.length; i++)
+if (!ProxyState.todos[i].completed) {
+  count++
+}
+document.getElementById('countleft').innerHTML = `ToDo's Remaining : ${count}`
+}
+
+
+
 export default class TodoController {
   constructor() {
     ProxyState.on("todos",_drawTodos)
     //TODO Remember to register your subscribers
     //NOTE DONE
     this.getTodos();
+    ProxyState.on("todos",_drawTaskLeft)
   }
 
   getTodos() {

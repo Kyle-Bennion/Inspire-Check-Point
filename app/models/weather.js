@@ -14,9 +14,8 @@ export default class Weather {
   }
 
   get WeatherTemplate() {
-    return /*html */ `<div class="card-body">
-    <h6 class="card-title">${this.city}</h6>
-    <p class="card-text">${this.fahrenheit} °F</p>
+    return /*html */ `<div class="card-body" onclick="app.weatherController.weatherSwap()"> <h6 class = "card-title" >${this.city}</h6>
+    <p class="card-text spcpointer" id = "weather-swap">${this.fahrenheit}</p>
 </div>`
   }
 

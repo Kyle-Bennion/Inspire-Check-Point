@@ -10,6 +10,8 @@ function drawWeather() {
   document.getElementById('weather-info').innerHTML = weather.WeatherTemplate
 
 }
+
+
 export default class WeatherController {
   constructor() {
     ProxyState.on("weather", drawWeather);
@@ -22,6 +24,13 @@ export default class WeatherController {
     }
     catch (e) {
       console.error(e)
+    }
+  }
+   weatherSwap() {
+    try {
+      weatherService.weatherSwap()
+    } catch (error) {
+      console.error(error);
     }
   }
 }
