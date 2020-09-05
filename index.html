@@ -54,10 +54,10 @@
                 <ul class="list-group" id="list-todo">
                 This is where task goes
                 </ul>
-                <form onsubmit = "app.listController.addTask(event,'${this.id}')">
+                <form onsubmit = "app.todoController.addTodo(event)">
                     <label for="exampleFormControlInput1" class="mt-4">ToDo</label>
                     <div class="form-group d-flex flex-direction-row">
-                        <input type="text" required class="form-control mb-0" id="New Task" placeholder="Example Text" name = "comment"><button type="submit" class="btn btn-transparent"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                        <input type="text" required class="form-control mb-0" name="todo" placeholder="Example Text" name = "comment"><button type="submit" class="btn btn-transparent"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
                     </div>
                     <div class="form-group">
                     </div>

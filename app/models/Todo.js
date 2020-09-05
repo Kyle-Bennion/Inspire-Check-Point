@@ -1,8 +1,14 @@
 export default class Todo {
-  constructor({ _id, }) {
+  constructor({ _id, completed, user, description}) {
     this.id = _id;
-    this.completed = this.completed
+    this.completed = completed
     this.user = user
-
+    this.description = description
   }
+
+get TodoTemplate(){
+return ` <li>`
+
+}
+
 }
