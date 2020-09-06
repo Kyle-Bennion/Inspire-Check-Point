@@ -8,17 +8,17 @@ export default class Quote {
   }
 
 get QuoteTemplate(){
-return /*html */ `<div class="card " id = "quote-bar">
-<div class="card-body">
-    <blockquote class="blockquote mb-0 sfoot">
-        <p class="">${this.body}</p>
-        <footer class="blockquote-footer sfoottext">${this.author}</footer>
-        </blockquote>
-</div>
-</div>`
-
-
+  return /*html*/ `<h5 class = "text-style" data-toggle="tooltip" data-placement="left" title="${this.author}">${this.body}</h5>`
+  
 }
 
 
 }
+// return /*html */ `<div class="card " id = "quote-bar">
+// <div class="card-body">
+//     <blockquote class="blockquote mb-0 sfoot">
+//         <p class="">${this.body}</p>
+//         <footer class="blockquote-footer sfoottext">${this.author}</footer>
+//         </blockquote>
+// </div>
+// </div>`
