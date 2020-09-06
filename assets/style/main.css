@@ -36,6 +36,14 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+.card{
+  opacity: .70;
+}
+.card1{
+  opacity: .80;
+}
+
 .spcpointer{
   cursor: pointer;
   user-select: none;
