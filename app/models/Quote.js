@@ -8,7 +8,7 @@ export default class Quote {
   }
 
 get QuoteTemplate(){
-  return /*html*/ `<h5 class = "text-style" data-toggle="tooltip" data-placement="left" title="${this.author}">${this.body}</h5>`
+  return /*html*/ `<h5 class = "text-style" data-toggle="tooltip" data-placement="left" title="- ${this.author}">" ${this.body} "</h5>`
   
 }
 
